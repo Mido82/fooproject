@@ -12,17 +12,17 @@ pipeline {
       }
      post {
       always {
-        junit '**/TEST*.xml'
+        junit 'target/surefire-reports/TEST*.xml'
       }
      }
   }
         stage('newman') {
             steps {
-                sh 'newman run Restful_Booker_Facit.postman_collection.json --environment Restful_Booker.postman_environment.json --reporters junit'
+                sh 'newman run postman/postman_collection.json --environment postman/postman_environment.json --reporters junit'
             }
             post {
                 always {
-                        junit '**/*xml'
+                        junit 'postman/newman/*xml'
                     }
                 }
         }
