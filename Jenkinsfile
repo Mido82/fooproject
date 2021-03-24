@@ -22,7 +22,7 @@ pipeline {
             }
             post {
                 always {
-                        junit 'postman/newman/*xml'
+                        junit 'newman/*xml'
                     }
                 }
         }
