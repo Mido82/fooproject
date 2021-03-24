@@ -90,8 +90,8 @@ Test av rätt datum
     [Documentation]                     test valid date in date section
     [Tags]                              testValidDate
 
-    Input Text                           id:start  03-03
-    Input Text                           id:end    03-04
+    Input Text                           id:start  04-03
+    Input Text                           id:end    04-04
     Click Button                         id:continue
     Wait Until Page Contains             What would you like to drive?
 
