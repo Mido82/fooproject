@@ -12,7 +12,7 @@ pipeline {
       }
      post {
       always {
-        junit 'maven/target/surefire-reports/TEST*.xml'
+        junit 'target/surefire-reports/TEST*.xml'
       }
      }
   }
